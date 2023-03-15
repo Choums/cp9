@@ -17,7 +17,7 @@ DEP			= $(SDEP)
 
 # compiler
 CC        = c++
-CFLAGS    = -Wall -Wextra -Werror -std=c++98 -g3 -MMD #-fsanitize=address
+CFLAGS    = -Wall -Wextra -Werror -std=c++98 -g3 -MMD -fsanitize=address
 
 
 all:			obj $(NAME)
