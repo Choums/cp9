@@ -6,7 +6,8 @@ INCDIR        =    ./includes
 OBJDIR        =    ./obj
 
 # src / obj files
-SRC        =	main.cpp
+SRC        =	main.cpp\
+				BitcoinExchange.cpp
 
 OBJ        	= $(addprefix $(OBJDIR)/,$(SRC:.cpp=.o))
 # nommage automatique des fichiers de dependance d'apres les noms des sources C
