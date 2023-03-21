@@ -6,7 +6,7 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/14 15:40:28 by root              #+#    #+#             */
-/*   Updated: 2023/03/16 19:26:39 by root             ###   ########.fr       */
+/*   Updated: 2023/03/21 17:10:55 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include <fstream>
 #include <string>
 #include <cstring>
+#include <cctype>
 #include <cstdlib>
 #include <limits>
 #include <cmath>
