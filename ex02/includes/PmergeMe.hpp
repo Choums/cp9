@@ -6,14 +6,18 @@
 /*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 09:53:31 by root              #+#    #+#             */
-/*   Updated: 2023/03/23 10:16:52 by root             ###   ########.fr       */
+/*   Updated: 2023/03/23 20:49:35 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 
+#include <vector>
+#include <list>
+#include <algorithm>
 #include <iostream>
 #include <cctype>
 #include <string>
 
 bool	str_digit(const char* str);
+void	check_arg(int ac, char** av, std::vector<int>& arr, std::list<int>& lst);
