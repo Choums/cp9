@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: root <root@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: chaidel <chaidel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 09:53:50 by root              #+#    #+#             */
-/*   Updated: 2023/03/24 12:48:11 by root             ###   ########.fr       */
+/*   Updated: 2023/03/24 15:24:23 by chaidel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	display_vector_sort(std::vector<int>& arr)
 			std::cout << ' ';
 	}
 	time = ((end.tv_sec - start.tv_sec) * 1000000 + end.tv_usec) - start.tv_usec;
-	std::cout << "Time to process a range of " << arr.size() << " with std::vector\t: " << time << std::endl;
+	std::cout << "Time to process a range of " << arr.size() << " with std::vector\t: " << time << " us" << std::endl;
 }
 
 void	display_list_sort(std::list<int>& lst)
@@ -48,7 +48,7 @@ void	display_list_sort(std::list<int>& lst)
 	gettimeofday(&end, NULL);
 
 	time = ((end.tv_sec - start.tv_sec) * 1000000 + end.tv_usec) - start.tv_usec;
-	std::cout << "Time to process a range of " << lst.size() << " with std::list \t: " << time << std::endl;
+	std::cout << "Time to process a range of " << lst.size() << " with std::list \t: " << time << " us" << std::endl;
 }
 
 int	main(int ac, char** av)
